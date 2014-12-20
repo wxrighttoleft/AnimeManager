@@ -42,5 +42,11 @@ namespace ComicManager
                 }
             }
         }
+
+        private void copyBookNameBtn_Click(object sender, EventArgs e)
+        {
+            string name = this.bookNameTextBox.Text;
+            Clipboard.SetDataObject(name.Substring(1, name.Length - 2));
+        }
     }
 }

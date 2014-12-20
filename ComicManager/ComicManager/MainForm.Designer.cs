@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.baseInfoGB = new System.Windows.Forms.GroupBox();
+            this.resetBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.addBookBtn = new System.Windows.Forms.Button();
             this.endDateDTP = new System.Windows.Forms.DateTimePicker();
             this.startDateDTP = new System.Windows.Forms.DateTimePicker();
             this.bookNameTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.startDateLabel = new System.Windows.Forms.Label();
             this.bookNameLabel = new System.Windows.Forms.Label();
-            this.addBookBtn = new System.Windows.Forms.Button();
-            this.updateBtn = new System.Windows.Forms.Button();
-            this.resetBtn = new System.Windows.Forms.Button();
             this.searchGB = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.copyBookNameBtn = new System.Windows.Forms.Button();
             this.openFileBtn = new System.Windows.Forms.Button();
             this.bookListView = new System.Windows.Forms.ListView();
@@ -78,6 +78,34 @@
             this.baseInfoGB.TabIndex = 0;
             this.baseInfoGB.TabStop = false;
             this.baseInfoGB.Text = "基本信息";
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.Location = new System.Drawing.Point(232, 144);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetBtn.TabIndex = 8;
+            this.resetBtn.Text = "重写";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.Enabled = false;
+            this.updateBtn.Location = new System.Drawing.Point(126, 144);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(75, 23);
+            this.updateBtn.TabIndex = 7;
+            this.updateBtn.Text = "修改";
+            this.updateBtn.UseVisualStyleBackColor = true;
+            // 
+            // addBookBtn
+            // 
+            this.addBookBtn.Location = new System.Drawing.Point(20, 144);
+            this.addBookBtn.Name = "addBookBtn";
+            this.addBookBtn.Size = new System.Drawing.Size(75, 23);
+            this.addBookBtn.TabIndex = 6;
+            this.addBookBtn.Text = "添加(&A)";
+            this.addBookBtn.UseVisualStyleBackColor = true;
             // 
             // endDateDTP
             // 
@@ -127,34 +155,6 @@
             this.bookNameLabel.TabIndex = 0;
             this.bookNameLabel.Text = "作 品 名：";
             // 
-            // addBookBtn
-            // 
-            this.addBookBtn.Location = new System.Drawing.Point(20, 144);
-            this.addBookBtn.Name = "addBookBtn";
-            this.addBookBtn.Size = new System.Drawing.Size(75, 23);
-            this.addBookBtn.TabIndex = 6;
-            this.addBookBtn.Text = "添加(&A)";
-            this.addBookBtn.UseVisualStyleBackColor = true;
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.Enabled = false;
-            this.updateBtn.Location = new System.Drawing.Point(126, 144);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(75, 23);
-            this.updateBtn.TabIndex = 7;
-            this.updateBtn.Text = "修改";
-            this.updateBtn.UseVisualStyleBackColor = true;
-            // 
-            // resetBtn
-            // 
-            this.resetBtn.Location = new System.Drawing.Point(232, 144);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(75, 23);
-            this.resetBtn.TabIndex = 8;
-            this.resetBtn.Text = "重写";
-            this.resetBtn.UseVisualStyleBackColor = true;
-            // 
             // searchGB
             // 
             this.searchGB.Controls.Add(this.searchBtn);
@@ -166,13 +166,6 @@
             this.searchGB.TabStop = false;
             this.searchGB.Text = "搜索";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(20, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 21);
-            this.textBox1.TabIndex = 2;
-            // 
             // searchBtn
             // 
             this.searchBtn.Location = new System.Drawing.Point(232, 20);
@@ -182,6 +175,13 @@
             this.searchBtn.Text = "搜索";
             this.searchBtn.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(20, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(181, 21);
+            this.textBox1.TabIndex = 2;
+            // 
             // copyBookNameBtn
             // 
             this.copyBookNameBtn.Location = new System.Drawing.Point(32, 279);
@@ -190,6 +190,7 @@
             this.copyBookNameBtn.TabIndex = 2;
             this.copyBookNameBtn.Text = "复制作品名";
             this.copyBookNameBtn.UseVisualStyleBackColor = true;
+            this.copyBookNameBtn.Click += new System.EventHandler(this.copyBookNameBtn_Click);
             // 
             // openFileBtn
             // 
