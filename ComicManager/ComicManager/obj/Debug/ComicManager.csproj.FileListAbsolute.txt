@@ -1,0 +1,9 @@
+E:\GitRespository\ComicManager\ComicManager\bin\Debug\ComicManager.exe.config
+E:\GitRespository\ComicManager\ComicManager\bin\Debug\ComicManager.exe
+E:\GitRespository\ComicManager\ComicManager\bin\Debug\ComicManager.pdb
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.csprojResolveAssemblyReference.cache
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.Form1.resources
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.Properties.Resources.resources
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.csproj.GenerateResource.Cache
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.exe
+E:\GitRespository\ComicManager\ComicManager\obj\Debug\ComicManager.pdb
