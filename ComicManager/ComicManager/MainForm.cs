@@ -31,8 +31,15 @@ namespace ComicManager
             DialogResult dr = ofd.ShowDialog();
             if (dr == DialogResult.OK)
             {
-                MessageBox.Show(ofd.FileName);
-                FileStream fs = new FileStream(ofd.FileName, FileMode.Open);
+                string filePath = ofd.FileName;
+                ofd.Dispose();
+                MessageBox.Show(filePath);
+                bool isExists = File.Exists(filePath);
+                if (isExists)
+                {
+                    FileStream fs = new FileStream(filePath, FileMode.Open);
+                    fs.Close();
+                }
             }
         }
     }
