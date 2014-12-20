@@ -199,6 +199,7 @@
             this.openFileBtn.TabIndex = 3;
             this.openFileBtn.Text = "打开文件";
             this.openFileBtn.UseVisualStyleBackColor = true;
+            this.openFileBtn.Click += new System.EventHandler(this.openFileBtn_Click);
             // 
             // bookListView
             // 
